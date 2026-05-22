@@ -31,7 +31,7 @@ ChatGPT | Claude | Gemini | Copilot | Perplexity | Pi
 3. Open Chrome → type chrome://extensions/ in address bar
 4. Turn ON "Developer mode" (top-right toggle)
 5. Click "Load unpacked" → Select the extracted extension folder
-6. Visit ChatGPT, Claude, or Gemini — protection starts automatically
+6. Visit ChatGPT, Claude, or Gemini - protection starts automatically
 
 ---
 
@@ -47,7 +47,7 @@ ChatGPT | Claude | Gemini | Copilot | Perplexity | Pi
 
 ## Contact
 
-Questions or feedback? Drop a message to anooshaashetty at gmail
+Questions or feedback? Drop a message to anooshaashetty@gmail.com
 
 ---
 
