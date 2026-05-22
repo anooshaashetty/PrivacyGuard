@@ -2,7 +2,7 @@
 
 Real-time privacy guardian for AI conversations. Scans your messages before sending to ChatGPT, Claude, Gemini, Copilot, Perplexity, and Pi.
 
-Created by Anusha | May 2026
+Created by Anusha Shetty | May 2026
 
 ---
 
@@ -37,7 +37,7 @@ ChatGPT | Claude | Gemini | Copilot | Perplexity | Pi
 
 ## How to Use
 
-- Auto-protect: Just chat normally — PrivacyGuard scans every message before it's sent
+- Auto-protect: Just chat normally - PrivacyGuard scans every message before it's sent
 - Warning overlay: If sensitive data is detected, a warning appears with options to Block, Edit, or Send Anyway
 - File warnings: Uploading sensitive files (passport, bank statement, etc.) triggers an alert
 - Dashboard: Click the shield icon in your toolbar to see your privacy score, scan history, permissions, and custom rules
