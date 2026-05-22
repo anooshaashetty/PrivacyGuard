@@ -1,0 +1,67 @@
+{
+  "manifest_version": 3,
+  "name": "PrivacyGuard",
+  "description": "Real-time privacy guardian that scans your messages before sending to AI agents. Protects your personal data on ChatGPT, Claude, Gemini, and more.",
+  "version": "1.0.0",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*",
+    "https://copilot.microsoft.com/*",
+    "https://www.perplexity.ai/*",
+    "https://pi.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://copilot.microsoft.com/*",
+        "https://www.perplexity.ai/*",
+        "https://pi.ai/*"
+      ],
+      "js": ["scanner.js", "content.js"],
+      "css": [],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["injected/*"],
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://copilot.microsoft.com/*",
+        "https://www.perplexity.ai/*",
+        "https://pi.ai/*"
+      ]
+    }
+  ]
+}
